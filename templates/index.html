@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Analyzer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .title {
+          display: flex;
+          align-items: center;
+          white-space: nowrap;
+          margin-bottom: 0;
+        }
+    
+        .header {
+          margin-left: 1%;
+          margin-top: 0.5%;
+          margin-bottom: 1%;
+          width: 0%;
+          font-size: 36px;
+          font-family: Times;
+        }
+    
+        .side-bar {
+          margin-left: 0%;
+          margin-right: 0%;
+          margin-bottom: 1%;
+          margin-top: 1%;
+          height: 6px;
+          width: 10000px;
+        }
+    
+        .gradient {
+          background: linear-gradient(45deg, #6f3d1e 39.15%, #a36848 62.18%, #6f3d1e 90.77%);
+        }
+    
+        .bar {
+          margin-bottom: 2.5%;
+          height: 8px;
+          background: linear-gradient(45deg, #6f3d1e 39.15%, #a36848 62.18%, #6f3d1e 90.77%);
+        }
+
+        button{ 
+            background: linear-gradient(45deg, #6f3d1e 39.15%, #a36848 62.18%, #6f3d1e 90.77%);
+        }
+        .form-control{
+
+            margin-top: 1%;
+            margin-bottom: 1%;
+        }
+
+
+      </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Code Analyzer</h1>
+        <div class="title">
+            <span class="side-bar gradient"></span>
+          </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/analyze" method="post" class="form-inline justify-content-center">
+                    <div class="form-group mb-2">
+                        <label for="theCode" class="sr-only">Enter theCode:</label>
+                        <input type="text" class="form-control form-control-lg" id="theCode" name="theCode" placeholder="Enter theCode" required style="height: 250px; width: 250px; white-space: nowrap;">
+                    </div>
+                    <button type="submit" class="btn btn-primary ml-2">Analyze</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
